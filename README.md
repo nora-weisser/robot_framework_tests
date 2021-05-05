@@ -25,3 +25,13 @@ Steps to reproduce:
 #### Radiobuttons: Working with radio buttons & check boxes
 
 #### dropdowns.robot: Working with Drop Down & List boxes
+
+#### Working with waits
+
+- Selenium Speed (SpeedTest.robot)
+- Selenium Timeouts (TomeoutTest.robot)
+- Implicit Wait (ImplicitWaitTest.robot)
+- Sleep (SpeedTest.robot)
+
+
+#### How to close Single & Multiple Browsers
