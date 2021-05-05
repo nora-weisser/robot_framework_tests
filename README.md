@@ -12,3 +12,11 @@ Steps to reproduce:
   - Input text into password field
   - Click button
 3. Close browser
+
+#### Inputbox.robot: Working with Web Elements
+- visibility status
+- enabled status
+- provide value
+- clearing value
+
+- Verify title of the page
