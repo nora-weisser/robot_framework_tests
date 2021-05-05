@@ -20,3 +20,6 @@ Steps to reproduce:
 - clearing value
 
 - Verify title of the page
+
+
+#### Radiobuttons: Working with radio buttons & check boxes
