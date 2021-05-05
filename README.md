@@ -23,3 +23,5 @@ Steps to reproduce:
 
 
 #### Radiobuttons: Working with radio buttons & check boxes
+
+#### dropdowns.robot: Working with Drop Down & List boxes
