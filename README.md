@@ -7,8 +7,8 @@ This repository contains tests which was created while learning different aspect
 Steps to reproduce:
 1. Open browser
 2. Login to Application:
-  1) Click LOGIN link
-  2) Input text into email field
-  3) Input text into password field
-  4) Click button
+  - Click LOGIN link
+  - Input text into email field
+  - Input text into password field
+  - Click button
 3. Close browser
