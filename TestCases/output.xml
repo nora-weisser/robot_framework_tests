@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.8.5 on darwin)" generated="20210505 14:43:20.770" rpa="false" schemaversion="2">
-<suite id="s1" name="ImplicitWaitTest" source="/Users/shalom/robot_framework_tests/TestCases/ImplicitWaitTest.robot">
-<test id="s1-t1" name="RegTest">
+<robot generator="Robot 4.0.1 (Python 3.8.5 on darwin)" generated="20210505 15:17:08.964" rpa="false" schemaversion="2">
+<suite id="s1" name="FramesDemo" source="/Users/shalom/robot_framework_tests/TestCases/FramesDemo.robot">
+<test id="s1-t1" name="Testing Frames">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>http://seleniumhq.github.io/selenium/docs/api/java/index</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210505 14:43:21.282" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
-<status status="PASS" starttime="20210505 14:43:21.281" endtime="20210505 14:43:28.091"/>
+<msg timestamp="20210505 15:17:09.366" level="INFO">Opening browser 'chrome' to base url 'http://seleniumhq.github.io/selenium/docs/api/java/index'.</msg>
+<status status="PASS" starttime="20210505 15:17:09.365" endtime="20210505 15:17:15.845"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210505 14:43:28.093" endtime="20210505 14:43:28.261"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>10 seconds</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210505 14:43:28.263" endtime="20210505 14:43:28.266"/>
-</kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>Gender</arg>
-<arg>M</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20210505 14:43:28.267" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<status status="PASS" starttime="20210505 14:43:28.266" endtime="20210505 14:43:28.419"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:FirstName1</arg>
-<arg>David</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210505 14:43:28.420" level="INFO">Typing text 'David' into text field 'name:FirstName1'.</msg>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20210505 15:17:15.850" level="INFO">Selecting frame 'packageListFrame'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210505 14:43:39.094" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210505 14:43:38.462" endtime="20210505 14:43:39.094"/>
+<msg timestamp="20210505 15:17:16.816" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210505 15:17:15.908" endtime="20210505 15:17:16.816"/>
 </kw>
-<msg timestamp="20210505 14:43:39.104" level="FAIL">Element with locator 'name:FirstName1' not found.</msg>
-<status status="FAIL" starttime="20210505 14:43:28.419" endtime="20210505 14:43:39.104"/>
+<msg timestamp="20210505 15:17:16.823" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
+<status status="FAIL" starttime="20210505 15:17:15.847" endtime="20210505 15:17:16.824"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:LastName</arg>
-<arg>John</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 14:43:39.105" endtime="20210505 14:43:39.105"/>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.824" endtime="20210505 15:17:16.824"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Email</arg>
-<arg>anhc@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 14:43:39.105" endtime="20210505 14:43:39.105"/>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.825" endtime="20210505 15:17:16.825"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Password</arg>
-<arg>davidjohn</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 14:43:39.106" endtime="20210505 14:43:39.106"/>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.825" endtime="20210505 15:17:16.825"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:ConfirmPassword</arg>
-<arg>davidjohn</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 14:43:39.107" endtime="20210505 14:43:39.107"/>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>WebDriver</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.826" endtime="20210505 15:17:16.826"/>
 </kw>
-<status status="FAIL" starttime="20210505 14:43:21.279" endtime="20210505 14:43:39.108">Element with locator 'name:FirstName1' not found.</status>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.826" endtime="20210505 15:17:16.826"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.827" endtime="20210505 15:17:16.827"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Help</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.827" endtime="20210505 15:17:16.827"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.828" endtime="20210505 15:17:16.828"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210505 15:17:16.828" endtime="20210505 15:17:16.828"/>
+</kw>
+<status status="FAIL" starttime="20210505 15:17:09.364" endtime="20210505 15:17:16.829">Element with locator 'packageListFrame' not found.</status>
 </test>
-<status status="FAIL" starttime="20210505 14:43:20.773" endtime="20210505 14:43:39.111"/>
+<status status="FAIL" starttime="20210505 15:17:08.969" endtime="20210505 15:17:16.832"/>
 </suite>
 <statistics>
 <total>
@@ -73,7 +73,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="ImplicitWaitTest">ImplicitWaitTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="FramesDemo">FramesDemo</stat>
 </suite>
 </statistics>
 <errors>

@@ -34,4 +34,10 @@ Steps to reproduce:
 - Sleep (SpeedTest.robot)
 
 
-#### How to close Single & Multiple Browsers
+#### CloseAll.robot: How to close Single & Multiple Browsers
+
+#### Alert.robot & FramesDemo.robot: Working with Alerts and Frames
+- How to handle alerts
+- How to Handle frames
+
+
