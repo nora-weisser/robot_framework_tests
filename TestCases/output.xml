@@ -1,79 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.8.5 on darwin)" generated="20210505 15:17:08.964" rpa="false" schemaversion="2">
-<suite id="s1" name="FramesDemo" source="/Users/shalom/robot_framework_tests/TestCases/FramesDemo.robot">
-<test id="s1-t1" name="Testing Frames">
+<robot generator="Robot 4.0.1 (Python 3.9.5 on darwin)" generated="20210506 17:18:48.202" rpa="false" schemaversion="2">
+<suite id="s1" name="TabbedWindows" source="/Users/shalom/Repositories/robot_framework_tests/TestCases/TabbedWindows.robot">
+<test id="s1-t1" name="TabbedWindows Test">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>http://seleniumhq.github.io/selenium/docs/api/java/index</arg>
+<arg>http://demo.automationtesting.in/Windows.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210505 15:17:09.366" level="INFO">Opening browser 'chrome' to base url 'http://seleniumhq.github.io/selenium/docs/api/java/index'.</msg>
-<status status="PASS" starttime="20210505 15:17:09.365" endtime="20210505 15:17:15.845"/>
+<msg timestamp="20210506 17:18:48.631" level="INFO">Opening browser 'chrome' to base url 'http://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20210506 17:18:48.630" endtime="20210506 17:19:01.472"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageListFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20210505 15:17:15.850" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210505 15:17:16.816" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210505 15:17:15.908" endtime="20210505 15:17:16.816"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button.btn.btn-info</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210506 17:19:01.475" level="INFO">Clicking element 'css:button.btn.btn-info'.</msg>
+<status status="PASS" starttime="20210506 17:19:01.474" endtime="20210506 17:19:02.541"/>
 </kw>
-<msg timestamp="20210505 15:17:16.823" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
-<status status="FAIL" starttime="20210505 15:17:15.847" endtime="20210505 15:17:16.824"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>org.openqa.selenium</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.824" endtime="20210505 15:17:16.824"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.825" endtime="20210505 15:17:16.825"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.825" endtime="20210505 15:17:16.825"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>WebDriver</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.826" endtime="20210505 15:17:16.826"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.826" endtime="20210505 15:17:16.826"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>classFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.827" endtime="20210505 15:17:16.827"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>Help</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.827" endtime="20210505 15:17:16.827"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.828" endtime="20210505 15:17:16.828"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20210505 15:17:16.828" endtime="20210505 15:17:16.828"/>
-</kw>
-<status status="FAIL" starttime="20210505 15:17:09.364" endtime="20210505 15:17:16.829">Element with locator 'packageListFrame' not found.</status>
+<status status="PASS" starttime="20210506 17:18:48.629" endtime="20210506 17:19:02.542"/>
 </test>
-<status status="FAIL" starttime="20210505 15:17:08.969" endtime="20210505 15:17:16.832"/>
+<status status="PASS" starttime="20210506 17:18:48.204" endtime="20210506 17:19:02.546"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="FramesDemo">FramesDemo</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TabbedWindows">TabbedWindows</stat>
 </suite>
 </statistics>
 <errors>
